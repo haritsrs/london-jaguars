@@ -510,11 +510,22 @@ h1 em, h2 em { color: var(--club-gold); font-style: normal; }
 .archive-player-card__note { min-height: 94px; margin: 0; padding: 0 16px 18px; color: var(--muted); font-size: 12px; line-height: 1.45; }
 .archive-player-card:hover .archive-player-card__portrait .player-visual__fallback { transform: translateX(3px); }
 .archive-player-grid--past .archive-player-card__portrait { min-height: 240px; }
+.legend-ledger--cards .legend-row { grid-template-columns: 70px minmax(0, 1fr); gap: 24px; align-items: stretch; padding: 20px 0; }
+.legend-ledger--cards .legend-row__number { padding-top: 22px; }
+.archive-player-card--list { display: grid; grid-template-columns: 220px minmax(0, 1fr); background: transparent; }
+.archive-player-card--list .archive-player-card__portrait { grid-row: span 2; min-height: 220px; }
+.archive-player-card--list .archive-player-card__bottom { min-height: 0; align-items: center; padding: 24px 24px 12px; }
+.archive-player-card--list .archive-player-card__note { grid-column: 2; min-height: 0; padding: 0 24px 24px; }
+.past-player-groups { display: grid; gap: 92px; }
+.past-player-group .section-header { margin-bottom: 32px; }
+.past-player-group .section-header h2 { font-size: clamp(34px, 5vw, 62px); }
 .legend-row { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 34px; padding: 34px 0 38px; border-bottom: 1px solid var(--line); }
 .legend-row__number { font-family: var(--number-font); color: var(--club-gold); font-size: 28px; }
 .legend-row h3 { margin: 8px 0 4px; font-size: clamp(30px, 4vw, 56px); line-height: .95; letter-spacing: -.045em; }
 .legend-row strong { display: block; color: var(--club-green); font-size: 14px; text-transform: uppercase; letter-spacing: .08em; }
 .legend-row p:last-child { max-width: 680px; margin-top: 17px; line-height: 1.6; }
+.legend-ledger--cards .archive-player-card__bottom h3 { margin: 0; font-size: clamp(20px, 2.5vw, 34px); line-height: 1; }
+.legend-ledger--cards .archive-player-card__note { max-width: none; margin-top: 0; line-height: 1.45; }
 .archive-link-band { padding: 42px 0; background: var(--club-green); color: var(--paper); }
 .archive-link-band--light { background: #f4f3ef; color: var(--ink-950); border-top: 1px solid var(--line); }
 .archive-link-band .site-frame { display: flex; gap: 34px; flex-wrap: wrap; }
@@ -561,4 +572,12 @@ h1 em, h2 em { color: var(--club-gold); font-style: normal; }
   .archive-player-card__bottom h3 { font-size: 16px; }
   .archive-player-card__bottom > div > span { font-size: 10px; }
   .archive-player-card__note { min-height: 118px; padding: 0 11px 15px; font-size: 11px; }
+  .legend-ledger--cards .legend-row { grid-template-columns: 38px minmax(0, 1fr); gap: 12px; padding: 14px 0; }
+  .legend-ledger--cards .legend-row__number { padding-top: 15px; font-size: 20px; }
+  .archive-player-card--list { grid-template-columns: 135px minmax(0, 1fr); }
+  .archive-player-card--list .archive-player-card__portrait { min-height: 190px; }
+  .archive-player-card--list .archive-player-card__bottom { padding: 16px 14px 9px; }
+  .archive-player-card--list .archive-player-card__note { padding: 0 14px 16px; }
+  .past-player-groups { gap: 62px; }
+  .past-player-group .section-header { margin-bottom: 24px; }
 }
