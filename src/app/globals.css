@@ -251,6 +251,7 @@ h1 em, h2 em { color: var(--club-gold); font-style: normal; }
 .season-ledger__arrow { display: grid; width: 34px; height: 34px; place-items: center; border: 1px solid var(--line); color: var(--club-green); transition: background 160ms ease, color 160ms ease; }
 .season-ledger__arrow:hover { background: var(--club-green); color: var(--white); }
 .season-ledger--compact .season-ledger__row { min-height: 94px; }
+.season-ledger--compact .season-ledger__row { grid-template-columns: 1.05fr 2fr auto; }
 .season-ledger--compact .season-ledger__trophies { display: none; }
 
 /* Page intros and indexes */
@@ -480,6 +481,7 @@ h1 em, h2 em { color: var(--club-gold); font-style: normal; }
 .season-snapshot__stats { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
 .season-snapshot .stat-number { white-space: nowrap; }
 @media (max-width: 760px) { .season-ledger__row { grid-template-columns: .9fr 1.4fr 1fr auto; } }
+@media (max-width: 760px) { .season-ledger--compact .season-ledger__row { grid-template-columns: .9fr 1.4fr auto; } }
 
 /* Club archive */
 .archive-page { background: var(--paper); color: var(--ink-950); }
