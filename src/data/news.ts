@@ -105,7 +105,7 @@ export const news: NewsItem[] = [
     excerpt: "The player records and campaigns that shaped London Jaguars history.",
     lead: "The club archive follows the players, matches and honours recorded across each London Jaguars campaign.",
     sections: [
-      { heading: "Three campaigns on record", paragraphs: ["The club archive follows the first-team group across 2026/27, the treble campaign of 2027/28 and the current 2028/29 squad."] },
+      { heading: "Four campaigns on record", paragraphs: ["The club archive begins with the seventh-place 2025/26 campaign, followed by the third-place 2026/27 season, the treble campaign of 2027/28 and the current 2028/29 squad."] },
       { heading: "Read the season in context", paragraphs: ["Appearances, goals, assists and clean sheets belong to their season. Together they show how each campaign was played."] },
     ],
     date: "29 Jul 2028",

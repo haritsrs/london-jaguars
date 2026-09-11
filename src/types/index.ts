@@ -50,11 +50,11 @@ export type CanonicalPlayerSeason = {
 
 export type CanonicalSeasonSummary = {
   season: string;
-  playerRecords: number;
-  avgOvr: number;
-  avgAge: number;
-  squadValueM: number;
-  weeklyWagesK: number;
+  playerRecords?: number;
+  avgOvr?: number;
+  avgAge?: number;
+  squadValueM?: number;
+  weeklyWagesK?: number;
   appearances?: number;
   goals?: number;
   assists?: number;
@@ -136,11 +136,11 @@ export type Season = {
   appearances?: number;
   assists?: number;
   cleanSheets?: number;
-  playerRecords: number;
-  avgOvr: number;
-  avgAge: number;
-  squadValueM: number;
-  weeklyWagesK: number;
+  playerRecords?: number;
+  avgOvr?: number;
+  avgAge?: number;
+  squadValueM?: number;
+  weeklyWagesK?: number;
   trophies: string[];
   story: string;
   current?: boolean;

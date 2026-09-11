@@ -14,6 +14,6 @@ export const clubLegends: ClubLegend[] = [
   { name: "Assane Diao", era: "Peak Jaguars", role: "Peak-era attacker", note: "The attacking face of peak Jaguars, Diao brought pace, goals and decisive moments to the treble-winning generation." },
   { name: "Emanuel Emegha", era: "2027/28", role: "The treble striker", note: "Emegha led the line through the treble season, scoring 39 goals and supplying 12 assists in 53 games." },
   { name: "Gonçalo Inácio", era: "2027/28", role: "Defensive captain", note: "The defensive captain of the treble side, Inácio made 55 appearances and set the tone at the heart of the team." },
-  { name: "Ismaël Saibari", era: "The rise", role: "First-team regular", note: "Saibari started in the first season and remained part of the squad through the treble, bridging the club’s competitive rise." },
+  { name: "Ismaël Saibari", era: "The rise", role: "First-team regular", note: "Saibari started in the opening Jaguars campaign and remained part of the squad through the treble, bridging the club’s competitive rise." },
   { name: "Johan Bakayoko", era: "The climb", role: "Right-wing competitor", note: "Bakayoko won the right-wing place, adapted when Diao took it and stayed a trusted part of the treble squad." },
 ];
