@@ -494,6 +494,22 @@ h1 em, h2 em { color: var(--club-gold); font-style: normal; }
 .archive-list h2 { font-size: clamp(42px, 6vw, 82px); line-height: .92; letter-spacing: -.055em; }
 .archive-list__aside { max-width: 270px; line-height: 1.5; }
 .legend-ledger { border-top: 1px solid var(--line); }
+.archive-player-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; }
+.archive-player-card { display: flex; min-width: 0; flex-direction: column; overflow: hidden; border-bottom: 1px solid var(--ink-950); background: var(--white); color: var(--ink-950); }
+.archive-player-card__portrait { position: relative; display: flex; min-height: 270px; align-items: center; justify-content: center; overflow: hidden; border-top: 3px solid var(--club-gold); background: var(--club-green-deep); color: var(--white); }
+.archive-player-card__portrait > img { z-index: 1; object-fit: cover; object-position: center top; }
+.archive-player-card__portrait .player-visual__fallback { position: relative; z-index: 1; font-family: var(--display-font); font-size: clamp(3.3rem, 5vw, 5.5rem); font-weight: 800; letter-spacing: -.12em; }
+.archive-player-card__top { position: absolute; z-index: 2; top: 15px; right: 16px; left: 16px; display: flex; align-items: center; justify-content: space-between; color: rgba(255,255,255,.72); font-size: 10px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+.archive-player-card__top span:first-child { color: var(--club-gold); font-family: var(--number-font); font-size: 15px; letter-spacing: .05em; }
+.archive-player-card__portrait small { position: absolute; z-index: 2; right: 16px; bottom: 13px; left: 16px; color: rgba(255,255,255,.58); font-size: 9px; letter-spacing: .06em; text-transform: uppercase; }
+.archive-player-card__bottom { display: flex; min-height: 118px; align-items: end; justify-content: space-between; gap: 10px; padding: 16px 16px 18px; }
+.archive-player-card__bottom .eyebrow { margin-bottom: 7px; color: var(--muted); font-size: 10px; }
+.archive-player-card__bottom h3 { margin: 0; font-family: var(--display-font); font-size: clamp(17px, 1.65vw, 24px); letter-spacing: -.045em; line-height: 1; }
+.archive-player-card__bottom > div > span { display: block; margin-top: 8px; color: var(--muted); font-size: 11px; line-height: 1.2; }
+.archive-player-card__bottom svg { flex: 0 0 auto; }
+.archive-player-card__note { min-height: 94px; margin: 0; padding: 0 16px 18px; color: var(--muted); font-size: 12px; line-height: 1.45; }
+.archive-player-card:hover .archive-player-card__portrait .player-visual__fallback { transform: translateX(3px); }
+.archive-player-grid--past .archive-player-card__portrait { min-height: 240px; }
 .legend-row { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 34px; padding: 34px 0 38px; border-bottom: 1px solid var(--line); }
 .legend-row__number { font-family: var(--number-font); color: var(--club-gold); font-size: 28px; }
 .legend-row h3 { margin: 8px 0 4px; font-size: clamp(30px, 4vw, 56px); line-height: .95; letter-spacing: -.045em; }
@@ -537,4 +553,12 @@ h1 em, h2 em { color: var(--club-gold); font-style: normal; }
   .staff-feature__media { min-height: 480px; }
   .staff-list { margin-top: 66px; }
   .staff-list__grid { grid-template-columns: 1fr; }
+  .archive-player-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .archive-player-card__portrait, .archive-player-grid--past .archive-player-card__portrait { min-height: 210px; }
+  .archive-player-card__top { top: 11px; right: 11px; left: 11px; font-size: 8px; }
+  .archive-player-card__portrait small { right: 11px; bottom: 10px; left: 11px; font-size: 8px; }
+  .archive-player-card__bottom { min-height: 100px; padding: 13px 11px 15px; }
+  .archive-player-card__bottom h3 { font-size: 16px; }
+  .archive-player-card__bottom > div > span { font-size: 10px; }
+  .archive-player-card__note { min-height: 118px; padding: 0 11px 15px; font-size: 11px; }
 }
