@@ -17,7 +17,7 @@ export function FixtureRow({ fixture, ribbon = false }: { fixture: Fixture; ribb
   const opponent = <span className={`fixture-row__team fixture-row__team--opponent ${jaguarsLeft ? "fixture-row__team--right" : "fixture-row__team--left"}`}>{opponentLogo ? <Image src={opponentLogo} alt="" width={30} height={30} /> : null}{fixture.opponent}</span>;
   return <div className={`fixture-row ${ribbon ? "fixture-row--ribbon" : ""} fixture-row--${fixture.result?.toLowerCase() ?? fixture.status}`}>
     <div className="fixture-row__date"><span>{fixture.date.split(" ")[0]}</span><small>{fixture.date.split(" ").slice(1).join(" ")}</small></div>
-    <div className="fixture-row__competition">{competitionLogo ? <Image src={competitionLogo} alt="" width={30} height={30} /> : null}<Tag tone={fixture.competitionCode === "UCL" ? "gold" : "default"}>{fixture.competitionCode}</Tag><span>{fixture.location}</span></div>
+    <div className="fixture-row__competition">{competitionLogo ? <Image className={`fixture-row__competition-logo ${fixture.competitionCode === "UCL" ? "fixture-row__competition-logo--ucl" : ""}`} src={competitionLogo} alt="" width={30} height={30} /> : null}<Tag tone={fixture.competitionCode === "UCL" ? "gold" : "default"}>{fixture.competitionCode}</Tag><span>{fixture.location}</span></div>
     <div className="fixture-row__teams">{jaguarsLeft ? jaguars : opponent}<strong className="fixture-row__score">{fixture.status === "upcoming" ? "vs" : scoreLabel}</strong>{jaguarsLeft ? opponent : jaguars}</div>
     <div className="fixture-row__status"><span>{stateLabel}</span><Link href={`/matches#${fixture.id}`} aria-label={`View ${fixture.opponent} match`}><ArrowUpRight size={16} /></Link></div>
   </div>;
