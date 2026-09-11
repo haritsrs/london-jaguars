@@ -269,6 +269,10 @@ h1 em, h2 em { color: var(--club-gold); font-style: normal; }
 .news-index .story-card:first-child { grid-column: span 2; }
 .news-index .story-card:first-child .story-card__art { min-height: 440px; }
 .news-index .story-card:first-child h3 { font-size: 30px; }
+.news-index .story-card__body { padding: 18px 18px 18px; }
+.news-index .story-card__meta { margin-bottom: 15px; }
+.news-index .story-card__read { margin-top: 20px; }
+.news-index .story-card__time { margin-right: 0; }
 
 /* Fixtures */
 .fixture-list-section { margin-top: 56px; }
