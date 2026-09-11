@@ -149,8 +149,8 @@ h1 em, h2 em { color: var(--club-gold); font-style: normal; }
 .story-card__link:hover .story-card__number { transform: translateX(3px); }
 .story-card__number { transition: transform 220ms ease; }
 .latest-grid__stack { display: flex; flex-direction: column; justify-content: space-between; gap: 22px; }
-.latest-grid__stack .story-card { display: grid; flex: 1; grid-template-columns: 46% 54%; background: transparent; border-bottom: 1px solid var(--line); }
-.latest-grid__stack .story-card__art { min-height: 150px; padding: 12px; }
+.latest-grid__stack .story-card { display: grid; flex: 1; grid-template-columns: 50% 50%; background: transparent; border-bottom: 1px solid var(--line); }
+.latest-grid__stack .story-card__art { min-height: 190px; padding: 12px; }
 .latest-grid__stack .story-card__number { font-size: 3.6rem; }
 .latest-grid__stack .story-card__art-label { top: 11px; left: 12px; font-size: 7px; }
 .latest-grid__stack .story-card__stamp { font-size: 8px; }
