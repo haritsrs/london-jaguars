@@ -108,10 +108,13 @@ for slug, name in teams.items():
 competitions = {
     "EPL": ("English Premier League", "4328"),
     "UCL": ("UEFA Champions League", "4480"),
+    "FA Community Shield": ("FA Community Shield", "4571"),
+    "Super Cup": ("UEFA Super Cup", "4512"),
 }
 for code, (name, league_id) in competitions.items():
     league = (fetch_json(f"https://www.thesportsdb.com/api/v1/json/123/lookupleague.php?id={league_id}").get("leagues") or [{}])[0]
-    destination = COMPETITION_DIR / f"{code.lower()}.png"
+    slug = re.sub(r"[^a-z0-9]+", "-", code.lower()).strip("-")
+    destination = COMPETITION_DIR / f"{slug}.png"
     download(league["strBadge"], destination)
     manifest[code] = {"name": name, "path": f"/competition-logos/{destination.name}", "source": league["strBadge"]}
 

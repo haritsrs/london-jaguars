@@ -293,7 +293,7 @@ h1 em, h2 em { color: var(--club-gold); font-style: normal; }
 .fixture-row__team--left { justify-content: flex-start; text-align: left; }
 .fixture-row__team--right { justify-content: flex-end; text-align: right; }
 .fixture-row__team img, .fixture-row__competition img { width: 30px; height: 30px; object-fit: contain; }
-.fixture-row__competition-logo--ucl { padding: 4px; background: var(--ink-950); }
+.fixture-row__competition-logo--dark { padding: 4px; background: var(--ink-950); }
 .fixture-row__competition img { flex: 0 0 30px; }
 .fixture-row__teams strong { display: flex; align-items: center; justify-content: center; gap: 9px; color: var(--club-green); font-family: var(--number-font); font-size: 21px; font-weight: 700; }
 .fixture-row__teams strong b { color: var(--ink-950); font-size: 24px; }

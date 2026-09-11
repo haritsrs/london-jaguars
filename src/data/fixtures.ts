@@ -44,6 +44,15 @@ export function getScorelineForJaguars(fixture: Fixture) {
   return fixture.location === "Away" ? [score[1], score[0]] as const : score;
 }
 
+export function getScoreLabelForJaguars(fixture: Fixture) {
+  const score = getScorelineForJaguars(fixture);
+  if (!score) return "—";
+  const penalties = fixture.score?.match(/\((\d+)-(\d+)\s+Pens\)/i);
+  if (!penalties) return `${score[0]}–${score[1]}`;
+  const penaltyScore = fixture.location === "Away" ? [penalties[2], penalties[1]] : [penalties[1], penalties[2]];
+  return `${score[0]}–${score[1]} (${penaltyScore[0]}–${penaltyScore[1]} pens)`;
+}
+
 export const completedRecord = previousFixtures.reduce((record, fixture) => {
   if (fixture.result === "Win") record.wins += 1;
   if (fixture.result === "Draw") record.draws += 1;

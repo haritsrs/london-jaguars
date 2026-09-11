@@ -168,5 +168,15 @@
     "name": "UEFA Champions League",
     "path": "/competition-logos/ucl.png",
     "source": "https://r2.thesportsdb.com/images/media/league/badge/facv1u1742998896.png"
+  },
+  "FA Community Shield": {
+    "name": "FA Community Shield",
+    "path": "/competition-logos/fa-community-shield.png",
+    "source": "https://r2.thesportsdb.com/images/media/league/badge/c6p4yh1723626286.png"
+  },
+  "Super Cup": {
+    "name": "UEFA Super Cup",
+    "path": "/competition-logos/super-cup.png",
+    "source": "https://r2.thesportsdb.com/images/media/league/badge/1eimvx1551123834.png"
   }
 }

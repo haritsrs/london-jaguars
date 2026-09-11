@@ -2584,14 +2584,14 @@ export const canonicalSchedule: ScheduleRecord[] = [
   {
     "date": "2028-08-05",
     "competitionCode": "FA Community Shield",
-    "opponent": "(Opponent TBD)",
+    "opponent": "Arsenal",
     "score": "3-3 (5-4 Pens)",
     "location": "Neutral",
     "result": "Win",
     "status": "Completed",
     "season": "2028/29",
-    "interpretation": "Completed FA Community Shield match vs (Opponent TBD); London Jaguars win. Score recorded as 3-3 (5-4 Pens); venue type: Neutral.",
-    "id": "2028-08-05-opponent-tbd"
+    "interpretation": "Completed FA Community Shield match vs Arsenal; London Jaguars win 5-4 on penalties after a 3-3 draw. Venue type: Neutral.",
+    "id": "2028-08-05-arsenal"
   },
   {
     "date": "2028-08-09",
