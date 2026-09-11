@@ -149,7 +149,8 @@ h1 em, h2 em { color: var(--club-gold); font-style: normal; }
 .story-card__link:hover .story-card__number { transform: translateX(3px); }
 .story-card__number { transition: transform 220ms ease; }
 .latest-grid__stack { display: flex; flex-direction: column; justify-content: space-between; gap: 22px; }
-.latest-grid__stack .story-card { display: grid; flex: 1; grid-template-columns: 50% 50%; background: transparent; border-bottom: 1px solid var(--line); }
+.latest-grid__stack .story-card { flex: 1; background: transparent; border-bottom: 1px solid var(--line); }
+.latest-grid__stack .story-card__link { display: grid; grid-template-columns: 50% 50%; }
 .latest-grid__stack .story-card__art { min-height: 190px; padding: 12px; }
 .latest-grid__stack .story-card__number { font-size: 3.6rem; }
 .latest-grid__stack .story-card__art-label { top: 11px; left: 12px; font-size: 7px; }
@@ -233,7 +234,7 @@ h1 em, h2 em { color: var(--club-gold); font-style: normal; }
 
 /* Archive */
 .season-ledger { border-top: 1px solid var(--ink-950); }
-.season-ledger__row { display: grid; min-height: 112px; grid-template-columns: 1.05fr .7fr 2fr 2fr auto; align-items: center; gap: 20px; border-bottom: 1px solid var(--line); }
+.season-ledger__row { display: grid; min-height: 112px; grid-template-columns: 1.05fr 2fr 2fr auto; align-items: center; gap: 20px; border-bottom: 1px solid var(--line); }
 .season-ledger__row--current { border-left: 3px solid var(--club-gold); padding-left: 18px; background: var(--club-green-soft); }
 .season-ledger__year { display: flex; flex-direction: column; gap: 5px; font-family: var(--number-font); font-size: 24px; font-weight: 700; }
 .season-ledger__year small { color: var(--club-green); font-family: var(--body-font); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
@@ -474,6 +475,7 @@ h1 em, h2 em { color: var(--club-gold); font-style: normal; }
 .player-profile__portrait .player-visual__fallback { z-index: 1; }
 .season-snapshot__stats { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
 .season-snapshot .stat-number { white-space: nowrap; }
+@media (max-width: 760px) { .season-ledger__row { grid-template-columns: .9fr 1.4fr 1fr auto; } }
 
 /* Club archive */
 .archive-page { background: var(--paper); color: var(--ink-950); }
