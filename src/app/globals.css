@@ -486,6 +486,11 @@ h1 em, h2 em { color: var(--club-gold); font-style: normal; }
 .archive-hero { padding: clamp(74px, 11vw, 150px) 0 clamp(68px, 9vw, 120px); }
 .archive-hero--dark { background: var(--club-green); color: var(--paper); }
 .archive-hero--light { background: #f4f3ef; }
+.archive-hero--legends { position: relative; isolation: isolate; overflow: hidden; }
+.archive-hero--legends::before, .archive-hero--legends::after { position: absolute; inset: 0; content: ""; pointer-events: none; }
+.archive-hero--legends::before { background: url("/Treble%20winners.png") center / cover no-repeat; filter: grayscale(1); opacity: .3; transform: scale(1.02); z-index: -2; }
+.archive-hero--legends::after { background: linear-gradient(90deg, rgba(7,22,18,.94), rgba(7,22,18,.66) 58%, rgba(7,22,18,.48)); z-index: -1; }
+.archive-hero--legends > .site-frame { position: relative; z-index: 1; }
 .archive-hero h1 { margin: 20px 0 28px; max-width: 900px; font-size: clamp(58px, 10vw, 142px); line-height: .88; letter-spacing: -.065em; }
 .archive-hero h1 em { color: var(--club-gold); font-style: normal; }
 .archive-hero__intro { max-width: 500px; font-size: 17px; line-height: 1.6; }
