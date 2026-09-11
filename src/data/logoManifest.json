@@ -1,0 +1,172 @@
+{
+  "arsenal": {
+    "name": "Arsenal",
+    "path": "/club-logos/arsenal.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/uyhbfe1612467038.png"
+  },
+  "aston-villa": {
+    "name": "Aston Villa",
+    "path": "/club-logos/aston-villa.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/uwzw561787679026.png"
+  },
+  "brentford": {
+    "name": "Brentford",
+    "path": "/club-logos/brentford.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/grv1aw1546453779.png"
+  },
+  "brighton": {
+    "name": "Brighton and Hove Albion",
+    "path": "/club-logos/brighton.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/ywypts1448810904.png"
+  },
+  "chelsea": {
+    "name": "Chelsea",
+    "path": "/club-logos/chelsea.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/pbf4ul1782638263.png"
+  },
+  "crystal-palace": {
+    "name": "Crystal Palace",
+    "path": "/club-logos/crystal-palace.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/ia6i3m1656014992.png"
+  },
+  "everton": {
+    "name": "Everton",
+    "path": "/club-logos/everton.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/eqayrf1523184794.png"
+  },
+  "ac-milan": {
+    "name": "AC Milan",
+    "path": "/club-logos/ac-milan.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/wvspur1448806617.png"
+  },
+  "aek-athens": {
+    "name": "AEK Athens",
+    "path": "/club-logos/aek-athens.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/4nogst1602773624.png"
+  },
+  "athletic-bilbao": {
+    "name": "Athletic Bilbao",
+    "path": "/club-logos/athletic-bilbao.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/68w7fe1639408210.png"
+  },
+  "barcelona": {
+    "name": "Barcelona",
+    "path": "/club-logos/barcelona.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/wq9sir1639406443.png"
+  },
+  "borussia-monchengladbach": {
+    "name": "Borussia Mönchengladbach",
+    "path": "/club-logos/borussia-monchengladbach.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/sysurw1473453380.png"
+  },
+  "bristol-city": {
+    "name": "Bristol City",
+    "path": "/club-logos/bristol-city.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/0ejxwz1601721013.png"
+  },
+  "coventry": {
+    "name": "Coventry City",
+    "path": "/club-logos/coventry.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/uxyqys1424033798.png"
+  },
+  "fenerbahce": {
+    "name": "Fenerbahçe",
+    "path": "/club-logos/fenerbahce.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/twxxvs1448199691.png"
+  },
+  "inter-milan": {
+    "name": "Inter Milan",
+    "path": "/club-logos/inter-milan.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/ryhu6d1617113103.png"
+  },
+  "olympique-lyon": {
+    "name": "Lyon",
+    "path": "/club-logos/olympique-lyon.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/blk9771656932845.png"
+  },
+  "psg": {
+    "name": "Paris Saint-Germain",
+    "path": "/club-logos/psg.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/rwqrrq1473504808.png"
+  },
+  "rangers": {
+    "name": "Rangers",
+    "path": "/club-logos/rangers.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/zgrbl21788969413.png"
+  },
+  "real-betis": {
+    "name": "Real Betis",
+    "path": "/club-logos/real-betis.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/2oqulv1663245386.png"
+  },
+  "villarreal": {
+    "name": "Villarreal",
+    "path": "/club-logos/villarreal.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/vrypqy1473503073.png"
+  },
+  "bournemouth": {
+    "name": "Bournemouth",
+    "path": "/club-logos/bournemouth.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/y08nak1534071116.png"
+  },
+  "leeds": {
+    "name": "Leeds United",
+    "path": "/club-logos/leeds.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/jcgrml1756649030.png"
+  },
+  "leicester": {
+    "name": "Leicester City",
+    "path": "/club-logos/leicester.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/xtxwtu1448813356.png"
+  },
+  "liverpool": {
+    "name": "Liverpool",
+    "path": "/club-logos/liverpool.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/kfaher1737969724.png"
+  },
+  "man-city": {
+    "name": "Manchester City",
+    "path": "/club-logos/man-city.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/vwpvry1467462651.png"
+  },
+  "manchester-united": {
+    "name": "Manchester United",
+    "path": "/club-logos/manchester-united.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/xzqdr11517660252.png"
+  },
+  "newcastle": {
+    "name": "Newcastle United",
+    "path": "/club-logos/newcastle.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/lhwuiz1621593302.png"
+  },
+  "nottingham-forest": {
+    "name": "Nottingham Forest",
+    "path": "/club-logos/nottingham-forest.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/1i2kvh1719918076.png"
+  },
+  "southampton": {
+    "name": "Southampton",
+    "path": "/club-logos/southampton.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/ggqtd01621593274.png"
+  },
+  "spurs": {
+    "name": "Tottenham Hotspur",
+    "path": "/club-logos/spurs.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/dfyfhl1604094109.png"
+  },
+  "west-ham": {
+    "name": "West Ham United",
+    "path": "/club-logos/west-ham.png",
+    "source": "https://r2.thesportsdb.com/images/media/team/badge/yutyxs1467459956.png"
+  },
+  "EPL": {
+    "name": "English Premier League",
+    "path": "/competition-logos/epl.png",
+    "source": "https://r2.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png"
+  },
+  "UCL": {
+    "name": "UEFA Champions League",
+    "path": "/competition-logos/ucl.png",
+    "source": "https://r2.thesportsdb.com/images/media/league/badge/facv1u1742998896.png"
+  }
+}
