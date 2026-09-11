@@ -290,6 +290,8 @@ h1 em, h2 em { color: var(--club-gold); font-style: normal; }
 .fixture-row__teams > span:last-child { text-align: right; }
 .fixture-row__team { display: inline-flex; align-items: center; justify-content: flex-start; gap: 10px; min-width: 0; }
 .fixture-row__team--opponent { justify-content: flex-end; }
+.fixture-row__team--left { justify-content: flex-start; text-align: left; }
+.fixture-row__team--right { justify-content: flex-end; text-align: right; }
 .fixture-row__team img, .fixture-row__competition img { width: 30px; height: 30px; object-fit: contain; }
 .fixture-row__competition img { flex: 0 0 30px; }
 .fixture-row__teams strong { display: flex; align-items: center; justify-content: center; gap: 9px; color: var(--club-green); font-family: var(--number-font); font-size: 21px; font-weight: 700; }
