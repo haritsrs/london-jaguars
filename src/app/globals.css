@@ -519,6 +519,11 @@ h1 em, h2 em { color: var(--club-gold); font-style: normal; }
 .staff-feature__copy p { max-width: 420px; line-height: 1.6; }
 .staff-feature__copy p + p { margin-top: 18px; }
 .staff-feature__copy .text-link { margin-top: 34px; color: var(--paper); }
+.staff-list { margin-top: 96px; padding-bottom: 42px; }
+.staff-list__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; border-top: 1px solid var(--ink-950); }
+.staff-card { min-height: 220px; padding: 28px 20px 30px 0; border-bottom: 1px solid var(--line); }
+.staff-card h3 { margin: 12px 0 15px; font-family: var(--display-font); font-size: clamp(27px, 3vw, 42px); letter-spacing: -.055em; line-height: .95; }
+.staff-card p:last-child { max-width: 45ch; color: var(--muted); line-height: 1.55; }
 @media (max-width: 720px) {
   .legend-row { grid-template-columns: 48px minmax(0, 1fr); gap: 16px; }
   .past-player-ledger article { grid-template-columns: 1fr 34px; gap: 12px; }
@@ -526,4 +531,6 @@ h1 em, h2 em { color: var(--club-gold); font-style: normal; }
   .past-player-ledger__link { grid-column: 2; grid-row: 1 / span 2; }
   .staff-feature { grid-template-columns: 1fr; }
   .staff-feature__media { min-height: 480px; }
+  .staff-list { margin-top: 66px; }
+  .staff-list__grid { grid-template-columns: 1fr; }
 }
