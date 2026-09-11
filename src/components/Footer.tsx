@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
 const columns = [
-  { title: "Club", links: [["Our identity", "/club"], ["Honours", "/club#honours"], ["History", "/club#history"], ["Stadium", "/club#stadium"]] },
+  { title: "Club", links: [["Our identity", "/club"], ["Honours", "/club#honours"], ["History", "/club#history"], ["Stadium", "/club#stadium"], ["Legends", "/legends"], ["Past players", "/past-players"], ["Coaching staff", "/staff"]] },
   { title: "Football", links: [["News", "/news"], ["Matches", "/matches"], ["First team", "/team"], ["League table", "/table"]] },
   { title: "Explore", links: [["Season stats", "/stats"], ["Club archive", "/club#archive"], ["The kits", "/kits"], ["First-team manager", "/club#manager"]] },
 ];

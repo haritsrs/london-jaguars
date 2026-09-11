@@ -458,3 +458,50 @@ h1 em, h2 em { color: var(--club-gold); font-style: normal; }
 .player-profile__portrait .player-visual__fallback { z-index: 1; }
 .season-snapshot__stats { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
 .season-snapshot .stat-number { white-space: nowrap; }
+
+/* Club archive */
+.archive-page { background: var(--paper); color: var(--ink); }
+.archive-hero { padding: clamp(74px, 11vw, 150px) 0 clamp(68px, 9vw, 120px); }
+.archive-hero--dark { background: var(--green); color: var(--paper); }
+.archive-hero--light { background: #f4f3ef; }
+.archive-hero h1 { margin: 20px 0 28px; max-width: 900px; font-size: clamp(58px, 10vw, 142px); line-height: .88; letter-spacing: -.065em; }
+.archive-hero h1 em { color: var(--gold); font-style: normal; }
+.archive-hero__intro { max-width: 500px; font-size: 17px; line-height: 1.6; }
+.archive-list { padding-top: clamp(72px, 9vw, 128px); padding-bottom: clamp(80px, 11vw, 160px); }
+.archive-list .section-header { align-items: end; margin-bottom: 58px; }
+.archive-list h2 { font-size: clamp(42px, 6vw, 82px); line-height: .92; letter-spacing: -.055em; }
+.archive-list__aside { max-width: 270px; line-height: 1.5; }
+.legend-ledger { border-top: 1px solid var(--line); }
+.legend-row { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 34px; padding: 34px 0 38px; border-bottom: 1px solid var(--line); }
+.legend-row__number { font-family: var(--condensed); color: var(--gold-dark); font-size: 28px; }
+.legend-row h3 { margin: 8px 0 4px; font-size: clamp(30px, 4vw, 56px); line-height: .95; letter-spacing: -.045em; }
+.legend-row strong { display: block; color: var(--green); font-size: 14px; text-transform: uppercase; letter-spacing: .08em; }
+.legend-row p:last-child { max-width: 680px; margin-top: 17px; line-height: 1.6; }
+.archive-link-band { padding: 42px 0; background: var(--green); color: var(--paper); }
+.archive-link-band--light { background: #f4f3ef; color: var(--ink); border-top: 1px solid var(--line); }
+.archive-link-band .site-frame { display: flex; gap: 34px; flex-wrap: wrap; }
+.archive-link-band a { display: inline-flex; align-items: center; gap: 10px; font-size: 19px; border-bottom: 1px solid currentColor; padding-bottom: 7px; }
+.past-player-ledger { border-top: 1px solid var(--line); }
+.past-player-ledger article { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(160px, .7fr); gap: 24px; align-items: center; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.past-player-ledger h3 { margin-top: 5px; font-size: 24px; }
+.past-player-ledger article > div:last-child { display: grid; gap: 4px; color: var(--green); text-align: right; }
+.past-player-ledger small { color: var(--muted); font-size: 12px; }
+.archive-footnote { max-width: 700px; margin-top: 34px; color: var(--muted); font-size: 13px; line-height: 1.55; }
+.staff-page { padding-top: clamp(72px, 9vw, 128px); padding-bottom: clamp(80px, 11vw, 160px); }
+.staff-page .section-header { align-items: end; margin-bottom: 58px; }
+.staff-page h2 { font-size: clamp(42px, 6vw, 82px); line-height: .92; letter-spacing: -.055em; }
+.staff-feature { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr); background: var(--green); color: var(--paper); }
+.staff-feature__media { position: relative; min-height: 620px; }
+.staff-feature__media img { object-fit: cover; object-position: center top; }
+.staff-feature__copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(32px, 6vw, 90px); }
+.staff-feature__copy h3 { margin: 14px 0 24px; font-size: clamp(38px, 5vw, 74px); line-height: .92; letter-spacing: -.055em; }
+.staff-feature__copy p { max-width: 420px; line-height: 1.6; }
+.staff-feature__copy p + p { margin-top: 18px; }
+.staff-feature__copy .text-link { margin-top: 34px; color: var(--paper); }
+@media (max-width: 720px) {
+  .legend-row { grid-template-columns: 48px minmax(0, 1fr); gap: 16px; }
+  .past-player-ledger article { grid-template-columns: 1fr; gap: 12px; }
+  .past-player-ledger article > div:last-child { text-align: left; }
+  .staff-feature { grid-template-columns: 1fr; }
+  .staff-feature__media { min-height: 480px; }
+}

@@ -1,0 +1,7 @@
+import Link from "next/link";
+import { ArrowUpRight } from "lucide-react";
+import { clubLegends } from "@/data/legends";
+
+export default function LegendsPage() {
+  return <div className="archive-page"><section className="archive-hero archive-hero--dark"><div className="site-frame"><p className="eyebrow eyebrow--gold">Club archive · 01</p><h1>The players<br /><em>who set the standard.</em></h1><p className="archive-hero__intro">Every club has its turning points. These are the people who gave London Jaguars its character, carried its ambition and made the next chapter possible.</p></div></section><section className="site-frame archive-list"><div className="section-header"><div><p className="eyebrow">Legends</p><h2>Ten names.<br />One thread.</h2></div><p className="archive-list__aside">From the first serious team to the side that conquered Europe.</p></div><div className="legend-ledger">{clubLegends.map((legend, index) => <article className="legend-row" key={legend.name}><span className="legend-row__number">{String(index + 1).padStart(2, "0")}</span><div><p className="eyebrow eyebrow--gold">{legend.era}</p><h3>{legend.name}</h3><strong>{legend.role}</strong><p>{legend.note}</p></div></article>)}</div></section><section className="archive-link-band"><div className="site-frame"><p className="eyebrow eyebrow--gold">Continue the archive</p><Link href="/past-players">Past players <ArrowUpRight size={18} /></Link><Link href="/staff">Coaching staff <ArrowUpRight size={18} /></Link></div></section></div>;
+}
