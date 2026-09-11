@@ -3,6 +3,7 @@ export type PositionGroup = "Goalkeeper" | "Defender" | "Midfielder" | "Forward"
 
 export type Player = {
   slug: string;
+  imageKey: string;
   name: string;
   firstName: string;
   position: PositionGroup;

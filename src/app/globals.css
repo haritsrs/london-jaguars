@@ -448,3 +448,13 @@ h1 em, h2 em { color: var(--club-gold); font-style: normal; }
 }
 
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; } }
+
+/* Player media is optional: initials remain the reliable fallback until a portrait is added. */
+.player-card__portrait > img { z-index: 1; object-fit: cover; object-position: center top; }
+.player-card__portrait > img + .player-visual__fallback { opacity: 0; }
+.player-visual__fallback { transition: opacity 160ms ease, transform 220ms ease; }
+.player-visual__fallback.is-visible { opacity: 1; }
+.player-profile__portrait > img { position: absolute !important; inset: 0; object-fit: cover; object-position: center top; opacity: .82; }
+.player-profile__portrait .player-visual__fallback { z-index: 1; }
+.season-snapshot__stats { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.season-snapshot .stat-number { white-space: nowrap; }

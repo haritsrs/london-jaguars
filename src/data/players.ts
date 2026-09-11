@@ -22,6 +22,7 @@ const currentRows = canonicalPlayerSeasons.filter((row) => row.season === "2028/
 
 export const players: Player[] = currentRows.map((row, index) => ({
   slug: slugify(row.player),
+  imageKey: `${positionGroups[row.position][0]}${row.player.replace(/[^A-Za-zÀ-ÿ]/g, "").slice(0, 1).toUpperCase()}${row.player.split(" ").at(-1)?.replace(/[^A-Za-zÀ-ÿ]/g, "").slice(0, 1).toUpperCase() ?? ""}`,
   name: row.player,
   firstName: row.player.split(" ")[0],
   position: positionGroups[row.position],
