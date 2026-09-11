@@ -12,7 +12,7 @@ const navigation = [
   { label: "Team", href: "/team", children: [{ label: "Men’s first team", href: "/team" }, { label: "Coaching staff", href: "/staff" }, { label: "Legends", href: "/legends" }, { label: "Past players", href: "/past-players" }] },
   { label: "Table", href: "/table", children: [{ label: "League table", href: "/table" }] },
   { label: "Stats", href: "/stats", children: [{ label: "Season stats", href: "/stats" }] },
-  { label: "Club", href: "/club", children: [{ label: "Our identity", href: "/club" }, { label: "Honours", href: "/club#honours" }, { label: "History", href: "/club#history" }, { label: "Stadium", href: "/club#stadium" }, { label: "The kits", href: "/kits" }] },
+  { label: "Club", href: "/club", children: [{ label: "Club identity", href: "/club" }, { label: "Honours", href: "/club#honours" }, { label: "Club history", href: "/club#history" }, { label: "Stadium", href: "/club#stadium" }, { label: "Kits", href: "/kits" }] },
 ];
 
 export function SiteHeader() {
@@ -49,14 +49,14 @@ export function SiteHeader() {
       </div>
       <div className={`mobile-menu ${open ? "mobile-menu--open" : ""}`} aria-hidden={!open}>
         <div className="site-frame mobile-menu__inner">
-          <p className="eyebrow">The standard is victory</p>
+          <p className="eyebrow">London Jaguars</p>
           <nav aria-label="Mobile navigation">
             {navigation.map((item, index) => {
               const active = pathname === item.href || pathname.startsWith(`${item.href}/`);
               return <div className="mobile-menu__group" key={item.href}><Link href={item.href} className={active ? "is-active" : ""} aria-current={active ? "page" : undefined} onClick={() => setOpen(false)}><span>0{index + 1}</span>{item.label}</Link><div className="mobile-menu__children">{item.children.filter((child) => child.href !== item.href).map((child) => <Link key={child.href} href={child.href} onClick={() => setOpen(false)}>{child.label}</Link>)}</div></div>;
             })}
           </nav>
-          <div className="mobile-menu__utility"><Link href="/kits" onClick={() => setOpen(false)}>Shop the kits</Link><Link href="/club" onClick={() => setOpen(false)}>Our identity</Link></div>
+          <div className="mobile-menu__utility"><Link href="/kits" onClick={() => setOpen(false)}>Shop the kits</Link><Link href="/club" onClick={() => setOpen(false)}>Club identity</Link></div>
         </div>
       </div>
     </header>

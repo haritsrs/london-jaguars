@@ -16,6 +16,6 @@ export function FixtureRow({ fixture, ribbon = false }: { fixture: Fixture; ribb
     <div className="fixture-row__date"><span>{fixture.date.split(" ")[0]}</span><small>{fixture.date.split(" ").slice(1).join(" ")}</small></div>
     <div className="fixture-row__competition">{competitionLogo ? <Image src={competitionLogo} alt="" width={30} height={30} /> : null}<Tag tone={fixture.competitionCode === "UCL" ? "gold" : "default"}>{fixture.competitionCode}</Tag><span>{fixture.location}</span></div>
     <div className="fixture-row__teams"><span className="fixture-row__team"><Image src="/logo.png" alt="" width={30} height={30} />London Jaguars</span><strong className="fixture-row__score">{fixture.status === "upcoming" ? "vs" : scoreLabel}</strong><span className="fixture-row__team fixture-row__team--opponent">{opponentLogo ? <Image src={opponentLogo} alt="" width={30} height={30} /> : null}{fixture.opponent}</span></div>
-    <div className="fixture-row__status"><span>{stateLabel}</span><Link href={`/matches#${fixture.id}`} aria-label={`View ${fixture.opponent} fixture`}><ArrowUpRight size={16} /></Link></div>
+    <div className="fixture-row__status"><span>{stateLabel}</span><Link href={`/matches#${fixture.id}`} aria-label={`View ${fixture.opponent} match`}><ArrowUpRight size={16} /></Link></div>
   </div>;
 }

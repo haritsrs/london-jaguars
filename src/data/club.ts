@@ -4,13 +4,13 @@ export const clubProfile = {
     role: "First-team manager",
     image: "/Kyle Shanahan Manager.jpg",
     imageAlt: "Kyle Shanahan on the touchline for London Jaguars",
-    description: "The manager sets the conditions for a team that wants control without caution: clear in possession, brave under pressure and ready for the decisive moment.",
+    description: "Shanahan asks the team to control matches with the ball, press with purpose and stay composed when the decisive moment arrives.",
   },
   stadium: {
     name: "Everbank Park",
     location: "London",
     image: "/Everbank Park.jpg",
     imageAlt: "Everbank Park at dusk on the London waterfront",
-    description: "Everbank Park is the London Jaguars home: a new landmark on the waterfront and the setting for every home fixture in the published schedule.",
+    description: "Everbank Park is the London Jaguars home on the London waterfront, hosting every home fixture in the published 2028/29 schedule.",
   },
 } as const;

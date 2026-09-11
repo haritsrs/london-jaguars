@@ -12,5 +12,5 @@ const rows = Array.from(new Set(fixtures.map((fixture) => fixture.competition)))
 });
 
 export function TablePreview() {
-  return <section className="table-preview"><div className="table-preview__header"><div><p className="eyebrow">01 / Current campaign</p><h2>The record so far.</h2></div><Link className="text-link" href="/matches">Full schedule <ArrowUpRight size={16} /></Link></div><div className="table-wrap"><table><thead><tr><th>Competition</th><th>Played</th><th>Upcoming</th><th>Record</th></tr></thead><tbody>{rows.slice(0, 5).map((row) => <tr key={row.competition}><td><strong>{row.competition}</strong></td><td>{row.played}</td><td>{row.upcoming}</td><td>{row.record}</td></tr>)}</tbody></table></div></section>;
+  return <section className="table-preview"><div className="table-preview__header"><div><p className="eyebrow">01 / Current campaign</p><h2>Matches by competition</h2></div><Link className="text-link" href="/matches">View all fixtures <ArrowUpRight size={16} /></Link></div><div className="table-wrap"><table><thead><tr><th>Competition</th><th>Played</th><th>Upcoming</th><th>Record</th></tr></thead><tbody>{rows.slice(0, 5).map((row) => <tr key={row.competition}><td><strong>{row.competition}</strong></td><td>{row.played}</td><td>{row.upcoming}</td><td>{row.record}</td></tr>)}</tbody></table></div></section>;
 }

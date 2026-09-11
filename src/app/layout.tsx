@@ -5,7 +5,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: { default: "London Jaguars FC", template: "%s · London Jaguars" },
-  description: "The official website of London Jaguars Football Club. The standard is victory.",
+  description: "The official website of London Jaguars Football Club, with first-team news, fixtures, results and club history.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

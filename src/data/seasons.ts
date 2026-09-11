@@ -2,9 +2,9 @@ import type { Season } from "@/types";
 import { canonicalSeasonSummaries } from "@/data/canonical";
 
 const seasonStories: Record<string, string> = {
-  "2026/27": "The second competitive season: third in the league, with the Carabao Cup and UEFA Conference League secured. The first season had finished seventh without a trophy; the response was immediate.",
-  "2027/28": "The treble season: Premier League, UEFA Champions League and FA Cup.",
-  "2028/29": "The current campaign: opening fixtures underway.",
+  "2026/27": "Seventh in the first season, then third with the Carabao Cup and UEFA Conference League",
+  "2027/28": "Treble winners: Premier League, UEFA Champions League and FA Cup",
+  "2028/29": "Six fixtures recorded through 15 August in the current campaign",
 };
 
 export const seasons: Season[] = canonicalSeasonSummaries.map((summary) => ({

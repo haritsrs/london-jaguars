@@ -3,9 +3,9 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
 const columns = [
-  { title: "Club", links: [["Our identity", "/club"], ["Honours", "/club#honours"], ["History", "/club#history"], ["Stadium", "/club#stadium"], ["Legends", "/legends"], ["Past players", "/past-players"], ["Coaching staff", "/staff"]] },
+  { title: "Club", links: [["Club identity", "/club"], ["Honours", "/club#honours"], ["Club history", "/club#history"], ["Stadium", "/club#stadium"], ["Legends", "/legends"], ["Past players", "/past-players"], ["Coaching staff", "/staff"]] },
   { title: "Football", links: [["News", "/news"], ["Matches", "/matches"], ["First team", "/team"], ["League table", "/table"]] },
-  { title: "Explore", links: [["Season stats", "/stats"], ["Club archive", "/club#archive"], ["The kits", "/kits"], ["First-team manager", "/club#manager"]] },
+  { title: "Explore", links: [["Season stats", "/stats"], ["Club archive", "/club#archive"], ["Kits", "/kits"], ["First-team leadership", "/club#manager"]] },
 ];
 
 export function Footer() {
