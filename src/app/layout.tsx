@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://london-jaguars.vercel.app"),
   title: { default: "London Jaguars FC", template: "%s · London Jaguars" },
   description: "The official website of London Jaguars Football Club, with first-team news, fixtures, results and club history.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     type: "website",
     siteName: "London Jaguars FC",
